@@ -9,6 +9,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { Rest } from '../providers/rest';
 
+import {
+ GoogleMaps
+} from '@ionic-native/google-maps';
+
+
+
 @NgModule({
   declarations: [
     MyApp
@@ -28,7 +34,8 @@ import { Rest } from '../providers/rest';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    Rest
+    Rest,
+    GoogleMaps
   ]
 })
 export class AppModule {}
